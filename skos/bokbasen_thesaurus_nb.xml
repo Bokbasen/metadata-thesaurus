@@ -56,9 +56,8 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/forskning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/informasjonsarbeid"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/informasjonsteori"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kommunikasjonstjenester"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/massemedier"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/medievitenskap"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/museer"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/arkiver">
@@ -186,7 +185,6 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kybernetikk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kybernetikk</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Kunstig intelligens</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjonsteori"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/operasjonsanalyse">
@@ -198,31 +196,6 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Systemteori</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjonsteori"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/journalistikk">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Journalistikk</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Nyhetsformidling</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjon"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/billedjournalistikk"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kildekritikk"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/videojournalistikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/billedjournalistikk">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Billedjournalistikk</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Fotojournalistikk</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kildekritikk">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Kildekritikk</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/videojournalistikk">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Videojournalistikk</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kommunikasjonstjenester">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -259,14 +232,48 @@
 		<skos:altLabel xml:lang="nb">SMS</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/telekommunikasjon"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/massemedier">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/medievitenskap">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Massemedier</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Medievitenskap</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjon"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/medier"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/journalistikk">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Journalistikk</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Nyhetsformidling</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medievitenskap"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/billedjournalistikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kildekritikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/videojournalistikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/billedjournalistikk">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Billedjournalistikk</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Fotojournalistikk</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kildekritikk">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kildekritikk</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/videojournalistikk">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Videojournalistikk</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/journalistikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/medier">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Medier</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Massekommunikasjon</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Massemedia</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Massemedier</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Media</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjon"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medievitenskap"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/aviser"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/digitalemedier"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kringkasting"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mediamiljoer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mediefolk"/>
@@ -275,14 +282,19 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Aviser</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Presse</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/massemedier"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medier"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/digitalemedier">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Digitale medier</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medier"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kringkasting">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kringkasting</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Kabel</skos:altLabel>
 		<skos:altLabel xml:lang="nb">N&#xE6;rkringkasting</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/massemedier"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medier"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/radio"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tv"/>
 	</skos:Concept>
@@ -310,13 +322,13 @@
 		<skos:altLabel xml:lang="nb">Avismilj&#xF8;er</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Fjernsynsmilj&#xF8;er</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Journalistmilj&#xF8;er</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/massemedier"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medier"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/mediefolk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Mediefolk</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Forleggere</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/massemedier"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medier"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/museer">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -335,6 +347,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/datasikring"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/datautstyr"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/geografiskeinformasjonssystemer"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kunstigintelligens"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/multimedia"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/programvare"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/systemutvikling"/>
@@ -486,6 +499,8 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/blogger">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Blogger</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/bloggere"/>
+		<skos:scopeNote xml:lang="nb">Her: om det &#xE5; skrive blogg</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/internett"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/internettsider">
@@ -624,6 +639,12 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Geografiske informasjonssystemer</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">GIS</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjonsteknologi"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kunstigintelligens">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kunstig intelligens</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">KI</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/informasjonsteknologi"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/multimedia">
@@ -802,12 +823,12 @@
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/python">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">PYTHON</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Python</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/programmeringssprak"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/scratch">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">SCRATCH</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Scratch</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/programmeringssprak"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/simula">
@@ -1119,6 +1140,7 @@
 		<skos:altLabel xml:lang="nb">Liksomvenner</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/oversanseligefenomener"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/drager"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fabeldyr"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/havfruer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/monstre"/>
 	</skos:Concept>
@@ -1127,6 +1149,17 @@
 		<skos:prefLabel xml:lang="nb">Drager</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Draker</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fantasiskapninger"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fabeldyr">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Fabeldyr</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fantasiskapninger"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/enhjorninger"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/enhjorninger">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Enhj&#xF8;rninger</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fabeldyr"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/havfruer">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -1470,10 +1503,22 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kulturhistorie">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kulturhistorie</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Kulturminner</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Kulturvern</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Sosialhistorie</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/historie"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kulturminner"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kulturvern"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kulturminner">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kulturminner</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">KULTURARV</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/kulturhistorie"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kulturvern">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kulturvern</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">BEVARING (KULTUR)</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/kulturhistorie"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/lokalhistorie">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -1686,6 +1731,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/papirforming"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/perler"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/scrapbooking"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/skinn-oglaerarbeid"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sloyd"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tekstilforming"/>
 	</skos:Concept>
@@ -1800,6 +1846,13 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Scrapbooking</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Fotoalbum</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/forming"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/skinn-oglaerarbeid">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Skinn- og l&#xE6;rarbeid</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">L&#xC6;RARBEID</skos:altLabel>
+		<skos:altLabel xml:lang="nb">SKINNARBEID</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/forming"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sloyd">
@@ -3337,6 +3390,7 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kunst</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/emne"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/andrekunstformer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/arkitektur"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bildendekunst"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kunsthistorie"/>
@@ -3345,6 +3399,32 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kunstnermiljoer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/musikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/scenekunst"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/andrekunstformer">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Andre kunstformer</skos:prefLabel>
+		<skos:scopeNote xml:lang="nb">Her: ikke-grafiske kunstformer</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/kunst"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/installasjonskunst"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/performance"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/popkunst"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/installasjonskunst">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Installasjonskunst</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">INSTALLASJONER (KUNST)</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/andrekunstformer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/performance">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Performance</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/andrekunstformer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/popkunst">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Popkunst</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Opkunst</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/andrekunstformer"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/arkitektur">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -3454,11 +3534,13 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/billedkunstnere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/collage"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fotografi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/gatekunst"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/graffiti"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/grafikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/malerkunst"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/maling"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/motiver"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/plakatkunst"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/skulpturer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tegnekunst"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tegning"/>
@@ -3511,10 +3593,14 @@
 		<skos:altLabel xml:lang="nb">Tredimensjonale bilder</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fotografi"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/gatekunst">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Gatekunst</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bildendekunst"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/graffiti">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Graffiti</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Gatekunst</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bildendekunst"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/grafikk">
@@ -3601,6 +3687,11 @@
 		<skos:altLabel xml:lang="nb">Billedanalyse</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Ikonografi</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Tegn</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bildendekunst"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/plakatkunst">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Plakatkunst</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bildendekunst"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/skulpturer">
@@ -3698,9 +3789,6 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fauvisme"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/futurisme"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kubisme"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/performance"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/plakatkunst"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/popkunst"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/surrealisme"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/abstraktkunst">
@@ -3729,22 +3817,6 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kubisme">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kubisme</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/modernekunst"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/performance">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Performance</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/modernekunst"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/plakatkunst">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Plakatkunst</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/modernekunst"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/popkunst">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Popkunst</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Opkunst</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/modernekunst"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/surrealisme">
@@ -4041,10 +4113,10 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/musikkformer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/blues"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/country"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hiphop"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/jazz"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/popogrock"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/punk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/rapoghiphop"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/reggae"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/rythmogblues"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/underholdningsmusikk"/>
@@ -4060,13 +4132,6 @@
 		<skos:altLabel xml:lang="nb">Bluegrass</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Country &#x26; western</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Countrymusikk</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/populaermusikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hiphop">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Hiphop</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Hip-hop</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Rap</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/populaermusikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/jazz">
@@ -4111,6 +4176,14 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Punk</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Punkrock</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/populaermusikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/rapoghiphop">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Rap og hiphop</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Hip-hop</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Hiphop</skos:altLabel>
+		<skos:altLabel xml:lang="nb">RAP</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/populaermusikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/reggae">
@@ -4903,6 +4976,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/medisinskforskning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/medisinskteknologi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/medisinskespesialomrader"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/prekliniskmedisin"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/psykiatri"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/seksualitet"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/skader"/>
@@ -4912,12 +4986,29 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/forebyggendemedisin">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Forebyggende medisin</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Epidemiologi</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Helsekontroll</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Preventiv medisin</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Smittevern</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Vaksinasjoner</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/folkehelse"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/folkehelse">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Folkehelse</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/forebyggendemedisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/epidemiologi"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/epidemiologi">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Epidemiologi</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkehelse"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/epidemier"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/epidemier">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Epidemier</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/epidemiologi"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/funksjonshemmede">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -4990,6 +5081,7 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/helse"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/lavkarbo"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/slanking"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/vegetarianisme"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/lavkarbo">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -5001,6 +5093,12 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Slanking</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Kalorier</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/ernaering"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/vegetarianisme">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Vegetarianisme</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">VEGANISME</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/ernaering"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/inneklima">
@@ -5291,7 +5389,6 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Geriatri</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Alderdomssykdommer</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Eldreomsorg</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medisinskespesialomrader"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/alderspsykiatri"/>
 	</skos:Concept>
@@ -5385,6 +5482,184 @@
 		<skos:altLabel xml:lang="nb">Oftalmologi</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medisinskespesialomrader"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/prekliniskmedisin">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Preklinisk medisin</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/anatomi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/reproduksjonsmedisin"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/anatomi">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Anatomi</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/prekliniskmedisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/menneskekroppen">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Menneskekroppen</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/anatomi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hjernen"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hjertet"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kjonnsorgan"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hjernen">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Hjernen</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hjertet">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Hjertet</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kjonnsorgan">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kj&#xF8;nnsorgan</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">PENIS</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiologi">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Fysiologi</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Fysiologiske tester</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/prekliniskmedisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/forplantning"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiognomi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiologiskutvikling"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kroppsfunksjoner"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/livssyklus"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/svangerskap"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/forplantning">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Forplantning</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Formering</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiognomi">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Fysiognomi</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiologiskutvikling">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Fysiologisk utvikling</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Fysisk utvikling</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Utviklingsbiologi</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fosterutvikling"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/vekst"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fosterutvikling">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Fosterutvikling</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Embryologi</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologiskutvikling"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/vekst">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Vekst</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologiskutvikling"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kroppsfunksjoner">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kroppsfunksjoner</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Urin</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fordoyelse"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fordoyelse">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Ford&#xF8;yelse</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/kroppsfunksjoner"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/avforing"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/avforing">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Avf&#xF8;ring</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">B&#xE6;sj</skos:altLabel>
+		<skos:altLabel xml:lang="nb">B&#xE6;sjing</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Promping</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fordoyelse"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/livssyklus">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Livssyklus</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/aldring"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/doden"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/aldring">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Aldring</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Gerontologi</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/livssyklus"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/overgangsalder"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/overgangsalder">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Overgangsalder</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Menopause</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/aldring"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/doden">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">D&#xF8;den</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">N&#xE6;r d&#xF8;den-opplevelser</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Ud&#xF8;delighet</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/livssyklus"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/svangerskap">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Svangerskap</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Graviditet</skos:altLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/fodsler"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/genetikk">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Genetikk</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Genteknologi</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/prekliniskmedisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/arvelighet"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/genforskning"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mutasjoner"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/arvelighet">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Arvelighet</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Arvel&#xE6;re</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/genforskning">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Genforskning</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/mutasjoner">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Mutasjoner</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Biologisk forandring</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/reproduksjonsmedisin">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">REPRODUKSJONSMEDISIN</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/prekliniskmedisin"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/infertilitetogassistertbefruktning"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/infertilitetogassistertbefruktning">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Infertilitet og assistert befruktning</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">ASSISTERT BEFRUKTNING</skos:altLabel>
+		<skos:altLabel xml:lang="nb">KUNSTIG BEFRUKTNING</skos:altLabel>
+		<skos:altLabel xml:lang="nb">SURROGATI</skos:altLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/barnloshet"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/reproduksjonsmedisin"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/psykiatri">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Psykiatri</skos:prefLabel>
@@ -5412,8 +5687,15 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/autisme">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Autisme</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Aspergers syndrom</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/psykiskelidelser"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/aspergersyndrom"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/aspergersyndrom">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Asperger syndrom</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">ASPERGER</skos:altLabel>
+		<skos:altLabel xml:lang="nb">ASPERGERS SYNDROM</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/autisme"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/barnepsykiatri">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -5566,6 +5848,7 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/medisin"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/seksuelllegning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/seksuellevariasjoner"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/utroskap"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/seksuelllegning">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -5589,6 +5872,13 @@
 		<skos:altLabel xml:lang="nb">Kikking</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Sadomasochisme</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Transvestittisme</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/seksualitet"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/utroskap">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Utroskap</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/ekteskapogparforhold"/>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/skilsmisse"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/seksualitet"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/skader">
@@ -5759,6 +6049,7 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sykdommer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/influensa"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kjonnssykdommer"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/pest"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/spedalskhet"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tuberkulose"/>
 	</skos:Concept>
@@ -5781,6 +6072,18 @@
 		<skos:altLabel xml:lang="nb">Syfilis</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Veneriske sykdommer</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/infeksjonssykdommer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/pest">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Pest</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/infeksjonssykdommer"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/svartedauden"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/svartedauden">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Svartedauden</skos:prefLabel>
+		<skos:scopeNote xml:lang="nb">Her: pestepidemi i Asia og Europa p&#xE5; midten av 1300-tallet</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/pest"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/spedalskhet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6021,47 +6324,14 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Biologi</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturvitenskap"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/anatomi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/biokjemi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/cellebiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/immunologi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/livsprosesser"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/marinbiologi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mikrobiologi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/parasitter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/utviklingslaeren"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/anatomi">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Anatomi</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/biologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/menneskekroppen">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Menneskekroppen</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/anatomi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hjernen"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hjertet"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kjonnsorgan"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hjernen">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Hjernen</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hjertet">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Hjertet</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kjonnsorgan">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Kj&#xF8;nnsorgan</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">PENIS</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/menneskekroppen"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/biokjemi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6116,144 +6386,6 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kromosomer</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/cellebiologi"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiologi">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Fysiologi</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Fysiologiske tester</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/biologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/forplantning"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiognomi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiologiskutvikling"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kroppsfunksjoner"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/livssyklus"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/svangerskap"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/forplantning">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Forplantning</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Formering</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/barnloshet"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/barnloshet">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Barnl&#xF8;shet</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Infertilitet</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Ufruktbarhet</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/forplantning"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiognomi">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Fysiognomi</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiologiskutvikling">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Fysiologisk utvikling</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Fysisk utvikling</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Utviklingsbiologi</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fosterutvikling"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/vekst"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fosterutvikling">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Fosterutvikling</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Embryologi</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologiskutvikling"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/vekst">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Vekst</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologiskutvikling"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kroppsfunksjoner">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Kroppsfunksjoner</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fordoyelse"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/urin"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fordoyelse">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Ford&#xF8;yelse</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/kroppsfunksjoner"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/avforing"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/avforing">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Avf&#xF8;ring</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">B&#xE6;sj</skos:altLabel>
-		<skos:altLabel xml:lang="nb">B&#xE6;sjing</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Promping</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fordoyelse"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/urin">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Urin</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Tissing</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/kroppsfunksjoner"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/livssyklus">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Livssyklus</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/aldring"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/doden"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/aldring">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Aldring</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Gerontologi</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/livssyklus"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/overgangsalder"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/overgangsalder">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Overgangsalder</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Menopause</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/aldring"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/doden">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">D&#xF8;den</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">N&#xE6;r d&#xF8;den-opplevelser</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Ud&#xF8;delighet</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/livssyklus"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/svangerskap">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Svangerskap</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Graviditet</skos:altLabel>
-		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/fodsler"/>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysiologi"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/genetikk">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Genetikk</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Genteknologi</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/biologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/arvelighet"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/genforskning"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mutasjoner"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/arvelighet">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Arvelighet</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Arvel&#xE6;re</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/genforskning">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Genforskning</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/mutasjoner">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Mutasjoner</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Biologisk forandring</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genetikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/immunologi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6318,11 +6450,8 @@
 		<skos:altLabel xml:lang="nb">Planter</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturvitenskap"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/blomsterplanter"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/karsporeplanter"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/lovsporeplanter"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/moser"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/plantefysiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sopp"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sporeplanter"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/blomsterplanter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6334,38 +6463,51 @@
 		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/stueplanter"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/karsporeplanter">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Karsporeplanter</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Bregner</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Pteridaphyta</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/lovsporeplanter">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">L&#xF8;vsporeplanter</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Lav</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Thallophyta</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/moser">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Moser</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Bryophyta</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Musci</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
-	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/plantefysiologi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Plantefysiologi</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Fotosyntese</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sporeplanter">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Sporeplanter</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/alger"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/karsporeplanter"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/lav"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/moser"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sopp"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/alger">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Alger</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sporeplanter"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/karsporeplanter">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Karsporeplanter</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Bregner</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Pteridaphyta</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sporeplanter"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/lav">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Lav</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sporeplanter"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/moser">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Moser</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Bryophyta</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Musci</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sporeplanter"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sopp">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Sopp</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Mykologi</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/botanikk"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sporeplanter"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysikk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6446,13 +6588,13 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Teoretisk fysikk</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fysikk"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysikalskeenheter"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fysiskeenheter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kvantemekanikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/relativitetsteori"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysikalskeenheter">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fysiskeenheter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Fysikalske enheter</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Fysiske enheter</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Enhetssystemer</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Si-systemet</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/teoretiskfysikk"/>
@@ -6480,7 +6622,6 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturvitenskap"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bergarter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/glasiologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/jordskjelv"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/landmaling"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/landskapsformer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/meteorologi"/>
@@ -6504,12 +6645,6 @@
 		<skos:altLabel xml:lang="nb">Havis</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Isbreer</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Isfjell</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/geologi"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/jordskjelv">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Jordskjelv</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Seismologi</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/geologi"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/landmaling">
@@ -6590,11 +6725,30 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/naturkatastrofer">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Naturkatastrofer</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Flodb&#xF8;lge</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Flom</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Naturkrefter</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/geologi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/flodbolger"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/flommer"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/jordskjelv"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/skred"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tsunamier"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/flodbolger">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Flodb&#xF8;lger</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/tsunamier"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturkatastrofer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/flommer">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Flommer</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturkatastrofer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/jordskjelv">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Jordskjelv</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Seismologi</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturkatastrofer"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/skred">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6609,6 +6763,12 @@
 		<skos:prefLabel xml:lang="nb">Sn&#xF8;skred</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Sn&#xF8;ras</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/skred"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/tsunamier">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Tsunamier</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/flodbolger"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturkatastrofer"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/paleontologi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6771,13 +6931,7 @@
 		<skos:altLabel xml:lang="nb">Praktisk regning</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Regning</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/matematikk"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/handelsregning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tall"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/handelsregning">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Handelsregning</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/aritmetikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/tall">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6941,6 +7095,7 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/miljovern"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/dyrevern"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/nasjonalparker"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/naturreservater"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/dyrevern">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -6954,7 +7109,11 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/nasjonalparker">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Nasjonalparker</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Naturreservater</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturvern"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/naturreservater">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Naturreservater</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/naturvern"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/okologi">
@@ -7073,18 +7232,24 @@
 		<skos:altLabel xml:lang="nb">FISKER</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Ichtyologi</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/virveldyr"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/haier"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/laks"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/torsk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/orret"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/haier">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Haier</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fisk"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/laks">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">LAKS</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Laks</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fisk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/torsk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">TORSK</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Torsk</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/fisk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/orret">
@@ -7256,7 +7421,7 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/pattedyr"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bevere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/ekorn"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hamster"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hamstere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/marsvin"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mus"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/rotter"/>
@@ -7271,9 +7436,9 @@
 		<skos:prefLabel xml:lang="nb">Ekorn</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/gnagere"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hamster">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hamstere">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Hamster</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Hamstere</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/gnagere"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/marsvin">
@@ -7356,9 +7521,9 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/klovdyr">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Klovdyr</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Antiloper</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Flodhester</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/pattedyr"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/antiloper"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/flodhester"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/geiter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/griser"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hjortedyr"/>
@@ -7366,6 +7531,16 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kyr"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sauer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sjiraffer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/antiloper">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Antiloper</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/klovdyr"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/flodhester">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Flodhester</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/klovdyr"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/geiter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -7385,15 +7560,15 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Hjortedyr</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/klovdyr"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/dahjort"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/dahjorter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/elger"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hjorter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/reinsdyr"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/radyr"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/dahjort">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/dahjorter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">D&#xE5;hjort</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">D&#xE5;hjorter</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">D&#xE5;dyr</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/hjortedyr"/>
 	</skos:Concept>
@@ -7477,10 +7652,15 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/bjorner">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Bj&#xF8;rner</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Isbj&#xF8;rner</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Pandaer</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Vaskebj&#xF8;rner</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/rovdyr"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/isbjorner"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/isbjorner">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Isbj&#xF8;rner</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bjorner"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hundedyr">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -7559,12 +7739,22 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sjopattedyr">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Sj&#xF8;pattedyr</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Delfiner</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Hvaler</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Hvalrosser</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Seler</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Sj&#xF8;kuer</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/pattedyr"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hvaler"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/seler"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hvaler">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Hvaler</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Delfiner</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sjopattedyr"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/seler">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Seler</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sjopattedyr"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/virvellosedyr">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -7576,7 +7766,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/insekter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/krepsdyr"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/maneter"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/protokister"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/protoktister"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/blotdyr">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -7673,12 +7863,10 @@
 		<skos:altLabel xml:lang="nb">BRENNMANETER</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/virvellosedyr"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/protokister">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/protoktister">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Protokister</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Alger</skos:altLabel>
+		<skos:prefLabel xml:lang="nb">Protoktister</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Tang</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Alger</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Am&#xF8;ber</skos:altLabel>
 		<skos:altLabel xml:lang="nb">PROTISTER</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Protozoer</skos:altLabel>
@@ -7728,6 +7916,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/spesialpedagogikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/undervisningsmetodikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/utdanning"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/veiledning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/voksenpedagogikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/barnehagepedagogikk">
@@ -7816,16 +8005,22 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Spr&#xE5;kvansker</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Afasi</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Lesevansker</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Ordblindhet</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Skrivevansker</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/spesialpedagogikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/lese-ogskrivevansker"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/lese-ogskrivevansker">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Lese- og skrivevansker</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Lesevansker</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Skrivevansker</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sprakvansker"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/dysleksi"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/dysleksi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Dysleksi</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sprakvansker"/>
+		<skos:altLabel xml:lang="nb">Ordblindhet</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/lese-ogskrivevansker"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/talevansker">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -7843,11 +8038,6 @@
 		<skos:prefLabel xml:lang="nb">MUTISME</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/talevansker"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/studieteknikk">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Studieteknikk</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/utdanning"/>
-	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/undervisningsmetodikk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Undervisningsmetodikk</skos:prefLabel>
@@ -7859,7 +8049,6 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Utdanning</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/pedagogikk"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/studieteknikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/etter-ogvidereutdanning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mesterproven"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/profesjonsutdanning"/>
@@ -8082,6 +8271,13 @@
 		<skos:altLabel xml:lang="nb">Voksenundervisning</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/utdanning"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/veiledning">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Veiledning</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">PEDAGOGISK VEILEDNING</skos:altLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/coaching"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/pedagogikk"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/voksenpedagogikk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Voksenpedagogikk</skos:prefLabel>
@@ -8112,21 +8308,27 @@
 		<skos:altLabel xml:lang="nb">Handlinger</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Kroppsspr&#xE5;k</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/psykologi"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/adhd"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hyperaktivitet"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/atferdsproblemer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/instinkter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/viljebestemtehandlinger"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/atferdsproblemer">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Atferdsproblemer</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/atferd"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/adhd"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hyperaktivitet"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/adhd">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">ADHD</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">AD-HD</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/atferd"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/atferdsproblemer"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hyperaktivitet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Hyperaktivitet</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/atferd"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/atferdsproblemer"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/instinkter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -8280,6 +8482,7 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/mot">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Mot</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">MODIG</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folelser"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/redsel">
@@ -8579,12 +8782,21 @@
 		<skos:prefLabel xml:lang="nb">Bibelen</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Kanoniske skrifter</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/religion"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/apokryfer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bibelhistorie"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bibelkritikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bibeloversettelser"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bibeltolkning"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/gamletestamente"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/nyetestamente"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/apokryfer">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Apokryfer</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Apokryfiske skrifter</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Gnostiske skrifter</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Psevepigrafer</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bibelen"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/bibelhistorie">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -8669,19 +8881,10 @@
 		<skos:prefLabel xml:lang="nb">Nye testamente</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Nt</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/bibelen"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/apokryfer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/apostlenesgjerninger"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/evangeliene"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/johannesapenbaring"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/nytestamentligebrev"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/apokryfer">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Apokryfer</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Apokryfiske skrifter</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Gnostiske skrifter</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Psevepigrafer</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/nyetestamente"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/apostlenesgjerninger">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -9488,6 +9691,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/reinkarnasjon"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/religionsfenomenologi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/religionsfilosofi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/religionsforfolgelse"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/religionspedagogikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/religionspsykologi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/religionsutovelse"/>
@@ -9585,6 +9789,11 @@
 		<skos:prefLabel xml:lang="nb">Religionsfilosofi</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/religionsvitenskap"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/religionsforfolgelse">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Religionsforf&#xF8;lgelse</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/religionsvitenskap"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/religionspedagogikk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Religionspedagogikk</skos:prefLabel>
@@ -9647,6 +9856,13 @@
 		<skos:altLabel xml:lang="nb">Religi&#xF8;s mystisisme</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Undere</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/religionsvitenskap"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/spiritualitet"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/spiritualitet">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Spiritualitet</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">&#xC5;NDELIGHET</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/religioseopplevelser"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/religiosebevegelser">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -9978,12 +10194,17 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/julen">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Julen</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Advent</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Julefeiring</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Juleforberedelser</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Julefortellinger</skos:altLabel>
 		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/juleevangeliet"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/hoytider"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/advent"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/advent">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Advent</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/julen"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/pinsen">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -10183,6 +10404,7 @@
 		<skos:prefLabel xml:lang="nb">Sosiologi</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/samfunnsfag"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/barnekunnskap"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/barnloshet"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/demografi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/forbruk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/humanistiskeforkjempere"/>
@@ -10192,6 +10414,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/likestilling"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/omsorgssvikt"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/samlivsformer"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosialkontroll"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosiallagdeling"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosialvelferd"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosialeendringer"/>
@@ -10236,6 +10459,12 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Amming</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/barnestell"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/barnloshet">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Barnl&#xF8;shet</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/infertilitetogassistertbefruktning"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sosiologi"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/demografi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -10370,6 +10599,7 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/bloggere">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Bloggere</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/blogger"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/skriftligkommunikasjon"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kryptografi">
@@ -10461,7 +10691,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/ekteskapogparforhold"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/etterlatte"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/foreldre"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/foreldrelos"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/foreldrelose"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/skilsmisse"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/slekter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/stefamilie"/>
@@ -10483,6 +10713,7 @@
 		<skos:prefLabel xml:lang="nb">Ekteskap og parforhold</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Ekteskap</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Parforhold</skos:altLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/utroskap"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/familie"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/monogami"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/polygami"/>
@@ -10542,15 +10773,16 @@
 		<skos:altLabel xml:lang="nb">MOR</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/foreldre"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/foreldrelos">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/foreldrelose">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Foreldrel&#xF8;s</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Foreldrel&#xF8;se</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/familie"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/skilsmisse">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Skilsmisse</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Samlivsbrudd</skos:altLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/utroskap"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/familie"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/slekter">
@@ -10592,6 +10824,12 @@
 		<skos:prefLabel xml:lang="nb">Sjekking</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Dating</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/samlivsformer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sosialkontroll">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Sosial kontroll</skos:prefLabel>
+		<skos:scopeNote xml:lang="nb">Her: brukes om begrensinger av individuell atferd gjennom f.eks. lederskap, sosiale normer, folkeopinion eller tvang</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sosiologi"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sosiallagdeling">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -10711,6 +10949,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/helse-ogsosialvesen"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/katastrofehjelp"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/nodetater"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/redningstjenester"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosialarbeid"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosialehjelpetiltak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sosialeytelser"/>
@@ -10748,6 +10987,18 @@
 		<skos:altLabel xml:lang="nb">HELSETJENESTER</skos:altLabel>
 		<skos:altLabel xml:lang="nb">OMSORGSTJENESTER</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/helse-ogsosialvesen"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/eldreomsorg"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/velferdsteknologi"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/eldreomsorg">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Eldreomsorg</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/helse-ogomsorgstjenester"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/velferdsteknologi">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Velferdsteknologi</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/helse-ogomsorgstjenester"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/helseinstitusjoner">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -10817,6 +11068,13 @@
 		<skos:altLabel xml:lang="nb">Overv&#xE5;kingspoliti</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Politiet</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/nodetater"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/redningstjenester">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Redningstjenester</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">REDNINGSAKSJONER</skos:altLabel>
+		<skos:altLabel xml:lang="nb">SJ&#xD8;REDNINGSTJENESTER</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sosialvelferd"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sosialarbeid">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -11004,13 +11262,14 @@
 		<skos:prefLabel xml:lang="nb">Etniske grupper</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Etniske milj&#xF8;er</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sosialegrupper"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/innvandrere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/minoriteter"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/folkeslagograser">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/folkegrupper">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Folkeslag og raser</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Folkegrupper</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Folkeslag</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/etniskegrupper"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/asiater"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fargede"/>
@@ -11027,45 +11286,44 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/asiater">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Asiater</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fargede">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Fargede</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Mulatter</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Negre</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Svarte</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hvite">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Hvite</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/keltere">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Keltere</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kurdere">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kurdere</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kvener">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Kvener</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/naturfolk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Naturfolk</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/semitter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Semitter</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/arabere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/joder"/>
 	</skos:Concept>
@@ -11082,18 +11340,24 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/urbefolkning">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Urbefolkning</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Aboriginere</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Eskimoer</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Inuiter</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Maorier</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Urinnv&#xE5;nere</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/aboriginere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/indianere"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/samer"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/aboriginere">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Aboriginere</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/urbefolkning"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/indianere">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Indianere</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">AMERIKANSK URBEFOLKNING</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/urbefolkning"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/samer">
@@ -11105,7 +11369,7 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Vandrefolk</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Nomader</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/romanifolk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/romfolk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/skogfinner"/>
@@ -11131,7 +11395,7 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/vikinger">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Vikinger</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkeslagograser"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/folkegrupper"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/innvandrere">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -11249,6 +11513,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/antisemittisme"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/apartheid"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/rasisme"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/seksuelltrakassering"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/antisemittisme">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -11265,6 +11530,13 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/rasisme">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Rasisme</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/diskriminering"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/seksuelltrakassering">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Seksuell trakassering</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/seksuelleovergrep"/>
+		<skos:scopeNote xml:lang="nb">Omfatter b&#xE5;de verbal og fysisk atferd</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/diskriminering"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fattigdom">
@@ -11406,14 +11678,13 @@
 		<skos:prefLabel xml:lang="nb">Mishandling</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Barnemishandling</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Overgrep</skos:altLabel>
-		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/seksuelleovergrep"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/vold"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/seksuelleovergrep">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Seksuelle overgrep</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Seksuell mishandling</skos:altLabel>
-		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/mishandling"/>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/seksuelltrakassering"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/vold"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/incest"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/voldtekt"/>
@@ -12793,7 +13064,7 @@
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/sprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/afrikanskesprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/afroasiatiskesprak"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/amerikanskeursprak"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/amerikanskeurfolksprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/asiatiskesprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/austronesiskesprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/baskisksprak"/>
@@ -12913,25 +13184,37 @@
 		<skos:prefLabel xml:lang="nb">Hebraisk</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/semittiskesprak"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/amerikanskeursprak">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/amerikanskeurfolksprak">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Amerikanske urspr&#xE5;k</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Amerikanske urfolkspr&#xE5;k</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/deenkeltesprak"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/eskimoisk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/eskimoisk-aleutiskesprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/indianersprak"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/eskimoisk-aleutiskesprak">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Eskimoisk-aleutiske spr&#xE5;k</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/amerikanskeurfolksprak"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/aleutisk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/eskimoisk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/aleutisk">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Aleutisk</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/eskimoisk-aleutiskesprak"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/eskimoisk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Eskimoisk</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Aleutiske spr&#xE5;k</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Eskimoisk aleutiske spr&#xE5;k</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Gr&#xF8;nlandsk spr&#xE5;k</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/amerikanskeursprak"/>
+		<skos:altLabel xml:lang="nb">INUITSPR&#xC5;K</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/eskimoisk-aleutiskesprak"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/indianersprak">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Indianerspr&#xE5;k</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/amerikanskeursprak"/>
+		<skos:scopeNote xml:lang="nb">Her: spr&#xE5;k snakket av amerikanske urfolk</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/amerikanskeurfolksprak"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/asiatiskesprak">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -13275,7 +13558,7 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Indiske spr&#xE5;k</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/indoeuropeiskesprak"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/benegali"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bengali"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/dravidiskesprak"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hindi"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/mellomindisk"/>
@@ -13286,9 +13569,11 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/singhalesisk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/urdu"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/benegali">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/bengali">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Benegali</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Bengali</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">BANGLA</skos:altLabel>
+		<skos:altLabel xml:lang="nb">BENGALSK</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/indiskesprak"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/dravidiskesprak">
@@ -13844,7 +14129,7 @@
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/foring">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Foring</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">FORING</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/husdyr"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/husdyravl">
@@ -13901,7 +14186,7 @@
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/forplanter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Forplanter</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">FORPLANTER</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Gress</skos:altLabel>
 		<skos:altLabel xml:lang="nb">H&#xF8;y</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Timotei</skos:altLabel>
@@ -14462,7 +14747,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/elektroniskekomponenter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/industrielektronikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/integrertekretser"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/radioogtv-teknikk"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/radio-ogtv-teknikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/teleteknikk"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/elektroniskekomponenter">
@@ -14503,9 +14788,9 @@
 		<skos:altLabel xml:lang="nb">Rom</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/elektronikk"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/radioogtv-teknikk">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/radio-ogtv-teknikk">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Radio og tv-teknikk</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Radio- og tv-teknikk</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Antenner</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Fjernsynsteknikk</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Kortb&#xF8;lge</skos:altLabel>
@@ -14549,7 +14834,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/farmasoytiskindustri"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/garveriindustri"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/glass-ogkeramiskindustri"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/jernogstalindustri"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/jern-ogstalindustri"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kjemiskindustri"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/naeringsmiddelindustri"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tekstilindustri"/>
@@ -14587,9 +14872,9 @@
 		<skos:prefLabel xml:lang="nb">Keramisk industri</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/glass-ogkeramiskindustri"/>
 	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/jernogstalindustri">
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/jern-ogstalindustri">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Jern og st&#xE5;lindustri</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">Jern- og st&#xE5;lindustri</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Tungindustri</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/industri"/>
 	</skos:Concept>
@@ -14718,6 +15003,7 @@
 		<skos:altLabel xml:lang="nb">Rust</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/materialerogmetoder"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/metallurgi"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/plast"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/metallurgi">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -14725,6 +15011,11 @@
 		<skos:altLabel xml:lang="nb">Kopper</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Metall</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Zinc</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/materiallaere"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/plast">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Plast</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/materiallaere"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/patenter">
@@ -15461,6 +15752,7 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/coaching">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Coaching</skos:prefLabel>
+		<skos:related rdf:resource="http://ns.boknett.no/thesaurus/veiledning"/>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/personalutvikling"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/medarbeidersamtaler">
@@ -16075,6 +16367,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/ekvatorial-guinea,republikken"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/elfenbenskysten"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/eritrea"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/eswatini"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/etiopia"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/gabon"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/gambia"/>
@@ -16103,7 +16396,6 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sierraleone"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/somalia"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sudan"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/swaziland"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sor-afrika"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/sor-sudan"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tanzania"/>
@@ -16174,6 +16466,13 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/eritrea">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Eritrea</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/afrika"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/eswatini">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Eswatini</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">KONGERIKET ESWATINI</skos:altLabel>
+		<skos:altLabel xml:lang="nb">SWAZILAND</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/afrika"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/etiopia">
@@ -16330,11 +16629,6 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sudan">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Sudan</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/afrika"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/swaziland">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Swaziland</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/afrika"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/sor-afrika">
@@ -17096,6 +17390,18 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Japan</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/asia"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/kyoto"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tokyo"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kyoto">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Kyoto</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/japan"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/tokyo">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Tokyo</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/japan"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/kina">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -17450,8 +17756,23 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/ny-guinea">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Ny-Guinea</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Papua</skos:altLabel>
+		<skos:scopeNote xml:lang="nb">Brukes for hele &#xF8;ya</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/australiaogoceania"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/papua"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/papuany-guinea"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/papua">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Papua</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">VEST-PAPUA</skos:altLabel>
+		<skos:scopeNote xml:lang="nb">Her: det indonesiske territoriumet som utgj&#xF8;r den vestlige halvdelen av &#xF8;ya Ny-Guinea</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/ny-guinea"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/papuany-guinea">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Papua Ny-Guinea</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">DEN UAVHENGIGE STATEN PAPUA NY-GUINEA</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/ny-guinea"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/polynesia">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -18024,6 +18345,12 @@
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Island</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/norden"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/reykjavik"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/reykjavik">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Reykjavik</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/island"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/norge">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -20616,7 +20943,7 @@
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/faerder">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">F&#xC6;RDER</skos:prefLabel>
+		<skos:prefLabel xml:lang="nb">F&#xE6;rder</skos:prefLabel>
 		<skos:scopeNote xml:lang="nb">Fra 1.1.2018, sammensl&#xE5;ing av Tj&#xF8;me og N&#xF8;tter&#xF8;y til F&#xE6;rder kommune</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/vestfold"/>
 	</skos:Concept>
@@ -21079,8 +21406,27 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/form">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Form</skos:prefLabel>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/digitaleprodukter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/musikk"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/digitaleprodukter">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Digitale produkter</skos:prefLabel>
+		<skos:scopeNote xml:lang="nb">Her: produkter som er tilgjengelige via internett</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/form"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/apper"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/nettbaserteprodukter"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/apper">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Apper</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/digitaleprodukter"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/nettbaserteprodukter">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Nettbaserte produkter</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/digitaleprodukter"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/litteraerform">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -21094,7 +21440,6 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/biografier"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/brevsamlinger"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/dagboker"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/digitaleprodukter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/diskografier"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/epos"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/essay"/>
@@ -21117,6 +21462,7 @@
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/lydboker"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/lyrikk"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/multimedia"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/myldreboker"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/noter"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/noveller"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/ordboker"/>
@@ -21192,24 +21538,6 @@
 		<skos:prefLabel xml:lang="nb">Dagb&#xF8;ker</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">&#xE5; skrive dagbok</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/digitaleprodukter">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Digitale produkter</skos:prefLabel>
-		<skos:scopeNote xml:lang="nb">Her: produkter som er tilgjengelige via internett</skos:scopeNote>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/apper"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/nettbaserteprodukter"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/apper">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Apper</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/digitaleprodukter"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/nettbaserteprodukter">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Nettbaserte produkter</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/digitaleprodukter"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/diskografier">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -21437,6 +21765,13 @@
 		<skos:prefLabel xml:lang="nb">Multimedia</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
 	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/myldreboker">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Myldreb&#xF8;ker</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">LETEB&#xD8;KER</skos:altLabel>
+		<skos:altLabel xml:lang="nb">VRIMLEB&#xD8;KER</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
+	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/noter">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Noter</skos:prefLabel>
@@ -21462,26 +21797,13 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/ordboker">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Ordb&#xF8;ker</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Fagordb&#xF8;ker</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Frekvensordb&#xF8;ker</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Konkordans</skos:altLabel>
+		<skos:altLabel xml:lang="nb">Rettskrivningsordb&#xF8;ker</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Rimordb&#xF8;ker</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/fagordboker"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/rettskrivningsordboker"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/synonym-ogfremmedordboker"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/fagordboker">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Fagordb&#xF8;ker</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Fagterminologi</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Nomenklatur</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/ordboker"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/rettskrivningsordboker">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Rettskrivningsordb&#xF8;ker</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Ordlister</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/ordboker"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/synonym-ogfremmedordboker">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -21529,19 +21851,12 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/reisehandboker">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Reiseh&#xE5;ndb&#xF8;ker</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Bil- og campingguider</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Reiseguider</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/reise-ogturguider"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/bil-ogcampingguider"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/byguider"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/parlorer"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/temareiseguider"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/bil-ogcampingguider">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Bil- og campingguider</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Bilferie</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Campingguider</skos:altLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/reisehandboker"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/byguider">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -21646,19 +21961,21 @@
 		<skos:altLabel xml:lang="nb">Dramatiseringer</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Tragedier</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/litteraerform"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/filmmanus"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/horespill"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/manus"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/rollespill"/>
-	</skos:Concept>
-	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/filmmanus">
-		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
-		<skos:prefLabel xml:lang="nb">Filmmanus</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/skuespill"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/horespill">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">H&#xF8;respill</skos:prefLabel>
 		<skos:scopeNote xml:lang="nb">Her: Trykte og innspilte h&#xF8;respill</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/skuespill"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/manus">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Manus</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Filmmanus</skos:altLabel>
+		<skos:altLabel xml:lang="nb">TV-SERIEMANUS</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/skuespill"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/rollespill">
@@ -21752,45 +22069,67 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/middelalderen">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Middelalderen</skos:prefLabel>
-		<skos:altLabel xml:lang="nb">Folkevandringstiden</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Korstogene</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Riddertiden</skos:altLabel>
 		<skos:altLabel xml:lang="nb">Sagatiden</skos:altLabel>
-		<skos:altLabel xml:lang="nb">Svartedauen</skos:altLabel>
 		<skos:scopeNote xml:lang="nb">Ca. 500-1500 e. Kr.</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/eldretid"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/hoymiddelalderen"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/senmiddelalderen"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/tidligmiddelalder"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/hoymiddelalderen">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">H&#xF8;ymiddelalderen</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Korstogene</skos:altLabel>
+		<skos:scopeNote xml:lang="nb">Ca. 1050-1300</skos:scopeNote>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/middelalderen"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1100-tallet"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1200-tallet"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1300-tallet"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1400-tallet"/>
-		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/vikingtiden"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1100-tallet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">1100-tallet</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/middelalderen"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/hoymiddelalderen"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1200-tallet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">1200-tallet</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/hoymiddelalderen"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/senmiddelalderen">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Senmiddelalderen</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Svartedauen</skos:altLabel>
+		<skos:scopeNote xml:lang="nb">Ca. 1300-1500</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/middelalderen"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1300-tallet"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1400-tallet"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1300-tallet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">1300-tallet</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/middelalderen"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/senmiddelalderen"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1400-tallet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">1400-tallet</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Renessansen</skos:altLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/senmiddelalderen"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/tidligmiddelalder">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">Tidlig middelalder</skos:prefLabel>
+		<skos:altLabel xml:lang="nb">Folkevandringstiden</skos:altLabel>
+		<skos:altLabel xml:lang="nb">MEROVINGERTIDEN</skos:altLabel>
+		<skos:scopeNote xml:lang="nb">Ca. 500-1050 e. Kr.</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/middelalderen"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/vikingtiden"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/vikingtiden">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Vikingtiden</skos:prefLabel>
 		<skos:scopeNote xml:lang="nb">Ca. 800-1050 e.Kr.</skos:scopeNote>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/middelalderen"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/tidligmiddelalder"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/oldtiden">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -21862,11 +22201,35 @@
 		<skos:prefLabel xml:lang="nb">1700-tallet</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">Revolusjonstiden</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/nyeretid"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1700-1750"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1750-1799"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1700-1750">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">1700-1750</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/1700-tallet"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1750-1799">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">1750-1799</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/1700-tallet"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1800-tallet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">1800-tallet</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/nyeretid"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1800-1850"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/1850-1899"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1800-1850">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">1800-1850</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/1800-tallet"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1850-1899">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">1850-1899</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/1800-tallet"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/1900-tallet">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -21963,30 +22326,78 @@
 		<skos:prefLabel xml:lang="nb">2000-tallet</skos:prefLabel>
 		<skos:altLabel xml:lang="nb">21. &#xE5;rhundre</skos:altLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/nyeretid"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2000-2049"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2050-2099"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2000-2049">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2000-2049</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-tallet"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2000-2009"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2010-2019"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2020-2029"/>
 		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2030-2039"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2040-2049"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2000-2009">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">2000-2009</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-tallet"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-2049"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2010-2019">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">2010-2019</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-tallet"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-2049"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2020-2029">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">2020-2029</skos:prefLabel>
-		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-tallet"/>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-2049"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2030-2039">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">2030-2039</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-2049"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2040-2049">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2040-2049</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-2049"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2050-2099">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2050-2099</skos:prefLabel>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2000-tallet"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2050-2059"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2060-2069"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2070-2079"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2080-2089"/>
+		<skos:narrower rdf:resource="http://ns.boknett.no/thesaurus/2090-2099"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2050-2059">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2050-2059</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2050-2099"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2060-2069">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2060-2069</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2050-2099"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2070-2079">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2070-2079</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2050-2099"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2080-2089">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2080-2089</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2050-2099"/>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/2090-2099">
+		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
+		<skos:prefLabel xml:lang="nb">2090-2099</skos:prefLabel>
+		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/2050-2099"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/genre">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
@@ -22061,7 +22472,7 @@
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/historisklitteratur">
 		<skos:inScheme rdf:resource="http://ns.boknett.no/thesaurus"/>
 		<skos:prefLabel xml:lang="nb">Historisk litteratur</skos:prefLabel>
-		<skos:scopeNote xml:lang="nb">Her: moderne skj&#xF8;nnlitteratur, der handlingen er lagt til fortiden (vanligvis f&#xF8;r forfatterens levetid)</skos:scopeNote>
+		<skos:scopeNote xml:lang="nb">Her: moderne skj&#xF8;nnlitteratur, der handlingen er lagt til fortiden, fram til og med andre verdenskrig (vanligvis f&#xF8;r forfatterens levetid)</skos:scopeNote>
 		<skos:broader rdf:resource="http://ns.boknett.no/thesaurus/genre"/>
 	</skos:Concept>
 	<skos:Concept rdf:about="http://ns.boknett.no/thesaurus/humor">
